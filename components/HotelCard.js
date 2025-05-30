@@ -1,8 +1,9 @@
-export function HotelCard({ hotel }) {
+import React from 'react';
+export default function HotelCard({ hotel }) {
   return (
-    <div className="border rounded-xl shadow p-4">
-      <h3 className="text-lg font-semibold">{hotel.name}</h3>
-      <p className="text-gray-600">{hotel.description}</p>
+    <div className='border rounded p-4 shadow'>
+      <h3 className='text-xl font-bold'>{hotel.name}</h3>
+      <p>{hotel.description}</p>
     </div>
   );
 }

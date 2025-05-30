@@ -1,7 +1,8 @@
-export function GuestActivityMatches({ location, activities }) {
+import React from 'react';
+export default function GuestActivityMatches({ location, activities }) {
   return (
-    <div className="mt-6">
-      <h2 className="text-lg font-semibold">Potential Matches</h2>
+    <div>
+      <h2 className='text-lg font-semibold'>Potential Matches</h2>
       <p>
         {activities.length > 0
           ? `Showing guests in ${location} interested in: ${activities.join(', ')}`
